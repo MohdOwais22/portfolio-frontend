@@ -1,6 +1,7 @@
 import axios from "axios";
+import env from "react-dotenv";
 
-const url = "https://portfolio-backend-3jub.onrender.com"
+const url = env.API_URL;
 
 export const getUser = () => async (dispatch) => {
   try {
